@@ -24,11 +24,11 @@ services:
         - 5432
 
   worker:
-    image: "cowsay-worker:master"
+    image: "p2ppp-worker:master"
     environment:
         BUILDMASTER: buildbot
         BUILDMASTER_PORT: 9989
-        WORKERNAME: cowsay-worker
+        WORKERNAME: p2ppp-worker
         WORKERPASS: pass
         WORKER_ENVIRONMENT_BLACKLIST: DOCKER_BUILDBOT* BUILDBOT_ENV_* BUILDBOT_1* WORKER_ENVIRONMENT_BLACKLIST
 
